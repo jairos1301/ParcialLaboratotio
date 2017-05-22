@@ -20,8 +20,13 @@ public class ParcialLaboratorio {
         System.out.println("PERMITE DIVIDIR DOS NUMEROS");
         int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 1"));
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 2"));
-        int div = num1/num2;
+        double div = num1/num2;
         System.out.println("El resultado de "+num1+"/"+num2+" es: "+div);
+        if (num1 < num2) {
+            System.out.println("El numero "+num2+" es mayor que "+num1);
+        } else {
+            System.out.println("El numero "+num1+" es mayor que "+num2);
+        }
     }
     
 }
